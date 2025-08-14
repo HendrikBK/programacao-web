@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <title>Document</title>
+        <style>
+            h1{
+                margin: auto auto 1em auto;
+                text-align: center;
+            }
+            form {
+                margin: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Crie seu Perfil de Desenvolvedor</h1>        
+        <form>
+            <div class="row">
+                <div class="col form-group mb-2">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                        <div class="input-group-text">Nome Completo</div>
+                        </div>
+                        <input type="text" class="form-control" id="primeiroNome" placeholder="Seu Nome">
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Seu Sobrenome">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 form-group mb-2">
+                    <label for="nome-usuario">Nome de Usuário</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control" id="nome-usuario" placeholder="Nome de Usuário">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 form-group mb-2">
+                        <label for="exemplo-email">E-mail</label>
+                        <input type="email" class="form-control" id="exemplo-email" aria-describedby="emailHelp" placeholder="seu@email.com">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 form-group mb-2">
+                    <label for="exemplo-senha">Senha</label>
+                    <input type="password" class="form-control" id="exemplo-senha">
+                </div>
+
+                <div class="col-lg-6 col-sm-12 form-group mb-2">
+                    <label for="exemplo-confirma-senha">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="exemplo-confirma--senha">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-sm-12 form-group mb-2">
+                    <label for="foto-perfil" class="form-label">Foto de Perfil</label>
+                    <input type="file" class="form-control" id="foto-perfil">
+                </div>
+
+                <div class="col-lg-6 col-sm-12 mb-2">
+                    <label for="foto-perfil" class="form-label">Foto de Perfil</label>
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Escolha o Plano</button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Escolha o Plano</li>
+                            <li class="dropdown-item">Grátis</li>
+                            <li class="dropdown-item">Profissional</li>
+                            <li class="dropdown-item">Empresarial</li>
+                        </ul>
+                        <input type="text" class="form-control" placeholder="Plano Selecionado">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-2">
+                <label for="tecnologias" class="form-label">Selecione suas tecnologias de interesse</label>
+                <select class="form-select" id="tecnologias" multiple aria-label="select-tecnologias">
+                    <option value="html-css">HTML & CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+
+            <div class="form-group form-check mb-2">
+                <div class="col">
+                    <input class="form-check-input" type="checkbox" value="" id="termos">
+                    <label class="form-check-label" for="termos">Eu li e aceito os termos de uso</label>
+                </div>
+            </div>     
+
+            <div class="form-group mb-2">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary col-12">Criar Perfil</button>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>
